@@ -60,6 +60,8 @@ public class CartServiceImpl implements CartService{
             cart.getProductList().remove(toRemove);
 
         }
+        System.out.println("Testing stash");
+        System.out.println("change");
         return cartRepository.save(cart);
     }
 
